@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b0e14428e51e3d49adf8117e94e4e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveJoystick: {fileID: 0}
   controller: {fileID: 1972604844398140328}
   anim: {fileID: 1972604844398140332}
   runSpeed: 20
