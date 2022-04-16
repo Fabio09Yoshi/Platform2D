@@ -1734,6 +1734,10 @@ PrefabInstance:
       propertyPath: attackRange
       value: 0.48
       objectReference: {fileID: 0}
+    - target: {fileID: 4624233262603016210, guid: 287d98c8c10d9ca4ba098f867495e5de, type: 3}
+      propertyPath: attackDamage
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8600556314096527767, guid: 287d98c8c10d9ca4ba098f867495e5de, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.408
@@ -1753,6 +1757,7 @@ GameObject:
   - component: {fileID: 1420082960}
   - component: {fileID: 1420082964}
   - component: {fileID: 1420082963}
+  - component: {fileID: 1420082965}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Enemy
@@ -1853,6 +1858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1525a8eadc978ed4b8d435e9666c63e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animEnemy: {fileID: 1420082964}
   maxHealth: 100
 --- !u!95 &1420082964
 Animator:
@@ -1873,6 +1879,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1420082965
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420082959}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1515347319
 GameObject:
   m_ObjectHideFlags: 0
