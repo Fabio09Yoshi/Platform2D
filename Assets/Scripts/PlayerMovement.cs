@@ -28,8 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            anim.SetBool("isJumping", true);
-            jump = true;
+            Debug.Log("PULO");
+            Jump();
         }    
     }
 
